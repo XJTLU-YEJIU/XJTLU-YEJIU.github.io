@@ -13,7 +13,7 @@
 <body>
 <!--Head-->
 <div class="page-header">
-  <h1>实用阀门设计手册<small>Subtext for header</small></h1>
+  <h1>阀门设计选型数据库</h1>
 </div>
 <!--Head-->
 <div class="container">
@@ -92,8 +92,9 @@ function filterFunction() {
   <li class="active"><a href="#产品图片展示" data-toggle="tab">产品图片展示</a></li>
   <li><a href="#主要性能参数" data-toggle="tab">主要性能参数</a></li>
   <li><a href="#主要外形及结构尺寸" data-toggle="tab">主要外型及尺寸结构</a></li>
-  <li><a href="#计算" data-toggle="tab">计算</a></li>
-  <li><a href="#">More..</a></li>
+  <li><a href="#计算" data-toggle="tab">输入参数</a></li>
+  <li><a href="#结果展示" data-toggle="tab">结果展示</a></li>
+  <li><a href="#">More...</a></li>
 </ul>
 
 <div class="tab-content">
@@ -442,7 +443,7 @@ function filterFunction() {
           </tr>
         </table>
   </div>
-
+<!--计算参数-->
   <div class="tab-pane fade in active" id="计算">
 
       <div class="container">
@@ -463,11 +464,109 @@ function filterFunction() {
             </div>
         </form>
       </div>
+
+      <div class="container">
+        <h4>Pipe Diameter[mm]:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Pipe Diameter[mm]">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Valve opening:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Valve opening">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Pipe length[mm]:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Pipe length[mm]">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Entrance speed[m/s]:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Entrance speed[m/s]">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Fluid Density[kg/m^3]:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Fluid Density[kg/m^3]">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Fluid viscosity:</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Fluid viscosity">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Maximum grid size</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Maximum grid size">
+            </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <h4>Deadline</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Deadline">
+            </div>
+        </form>
+      </div>
+
+
+      <div class="container">
+        <h4>Output interval</h4>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Output interval">
+            </div>
+        </form>
+      </div>
+
+
       <br>
       <div class="container">
         <button type="button" class="btn btn-primary btn-lg">Calculation</button>
       </div>
   </div>
+<!--计算参数-->
+  <div class="tab-pane fade in active" id="结果展示">
+      <div class="container">
+          <img src="images/速度云图.png" alt="">
+      </div>
+  </div>  
+
+
+
+
+
+
+
+
 <!--Tab Switch Js-->
 <script>
     $('#myTabs a').click(function (e) {
