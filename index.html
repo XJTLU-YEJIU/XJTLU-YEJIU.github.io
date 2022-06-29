@@ -9,28 +9,24 @@
     <link rel="stylesheet" href="static/plugins/bootstrap-3.4.1-dist/css/bootstrap.css">
     <link href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css" rel="stylesheet">
     <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+
+
+
 </head>
-<body>
+<body style="background-color: rgb(247,247,247)">
 <!--Head-->
-<div class="page-header">
-  <h1>阀门设计选型数据库</h1>
+<div class="page-header" style="background-color: white">
+    <img src="images/EvHjJQj8hA_small.jpeg" height="40" width="40" alt="left" align="left">
+    <h3 style="padding: 5px">阀门选型数据库</h3>
 </div>
 <!--Head-->
-<div class="container">
+<div class="container" style="background-color:white">
 
 <!--导航条和搜索一体化 Start-->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -44,21 +40,30 @@
             <li><a href="#">球阀</a></li>
             <li><a href="#">蝶阀</a></li>
             <li><a href="#">止回阀</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">隔膜阀</a></li>
+            <li><a href="#">旋塞阀</a></li>
+            <li><a href="#">柱塞阀</a></li>
+            <li><a href="#">安全阀</a></li>
+            <li><a href="#">减压阀</a></li>
+            <li><a href="#">蒸汽疏水阀</a></li>
+            <li><a href="#">水利控制阀</a></li>
+            <li><a href="#">调节阀</a></li>
+            <li><a href="#">其他阀门</a></li>
+            <li><a href="#">驱动装置</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">二级导航<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">型号选择<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <input type="text" class="navbar-form navbar-left" placeholder="Search.." id="my_Input" onkeyup="filterFunction()">
             <li><a href="#">Z11H、Z11Y型Pn25~PN160钢制内螺纹楔式闸阀</a></li>
             <li><a href="#">Z11H、Z11Y型800(Lb)钢制内螺纹楔式闸阀</a></li>
             <li><a href="#">Z11H、Z11Y型1500(Lb)、2500(Lb)内螺纹楔式锻钢闸阀</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#">Z11H、Z11Y型900(Lb)~2500(Lb)内螺纹自密封楔式锻钢闸阀</a></li>
+            <li><a href="#">Z15T-10、Z15W-10型铁制内螺纹暗杆楔式阀闸</a></li>
+            <li><a href="#">FDZ15T、FDZ15W型PN10、PN16内螺纹联接阀闸</a></li>
+            <li><a href="#">Z15W-16R、Z15W-16P型不锈钢阀闸</a></li>
+            <li><a href="#">Z15W-16T型内螺纹暗杆楔式热锻黄铜水表专用阀闸</a></li>
           </ul>
         </li>
       </ul>
@@ -102,8 +107,9 @@ function filterFunction() {
         <div class="left-column">
         <h3> 产品图片展示 </h3>
         <h4>Z11H、Z11Y型1500(Lb)、2500(Lb)内螺纹楔式锻钢闸阀</h4>
-        <img src="images/pic1.jpg" alt="">
+        <img src="images/pic1.jpg" style="display: block;margin-left: auto;margin-right: auto"; alt="">
     </div>
+      <br>
   </div>
 
   <div class="tab-pane fade in active" id="主要性能参数">
@@ -111,7 +117,7 @@ function filterFunction() {
           <h3> 主要性能参数 </h3>
           <table class="table table-bordered" data-click-to-select="true">
         <tr>
-          <th style="user-select: auto;" rowspan="2">Select</th>
+          <th style="user-select: auto;" rowspan="2">请选择</th>
           <th style="user-select: auto;" rowspan="2">型号</th>
           <th style="user-select: auto;" rowspan="2">压力级</th>
           <th style="user-select: auto;" rowspan="2">工作压力</th>
@@ -230,7 +236,7 @@ function filterFunction() {
     <!--  Table      -->
         <table class="table table-bordered">
             <tr>
-              <th style="user-select: auto" rowspan="2">Select</th>
+              <th style="user-select: auto" rowspan="2">请选择</th>
               <th style="user-select: auto;" colspan="3">DN</th>
               <th style="user-select: auto;" colspan="2">T(ANST)</th>
               <th style="user-select: auto;" colspan="2">T(JIS)</th>
@@ -445,119 +451,158 @@ function filterFunction() {
   </div>
 <!--计算参数-->
   <div class="tab-pane fade in active" id="计算">
-
-      <div class="container">
-        <h4>Please Enter Entrance Traffic:</h4>
-        <form class="navbar-form navbar-left" role="search">
+    <div class="container">
+        <table class="table table-borderless" >
+  <tbody>
+    <tr>
+      <td>
+        <h4>入口流量:</h4>
+            <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter Entrance traffic">
+            <input id="entrance-traffic" type="text" class="form-control" placeholder="输入入口流量" >
             </div>
         </form>
-      </div>
+      </td>
 
-
-      <div class="container">
-        <h4>Please Enter Entrance Pressure:</h4>
+      <td>
+          <h4>入口压力:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Entrance Pressure">
+                <input id="entrance-pressure" type="text" class="form-control" placeholder="输入入口压力">
             </div>
         </form>
-      </div>
 
-      <div class="container">
-        <h4>Pipe Diameter[mm]:</h4>
+      </td>
+
+      <td>
+        <h4>管道直径:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Pipe Diameter[mm]">
+              <input type="text" class="form-control" placeholder="输入管道直径">
             </div>
         </form>
-      </div>
+      </td>
+    </tr>
+    <tr>
 
-      <div class="container">
-        <h4>Valve opening:</h4>
+      <td>
+        <h4>阀门开度:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Valve opening">
+              <input type="text" class="form-control" placeholder="输入阀门开度">
             </div>
         </form>
-      </div>
+      </td>
 
-      <div class="container">
-        <h4>Pipe length[mm]:</h4>
+      <td>
+        <h4>管道长度:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Pipe length[mm]">
+              <input type="text" class="form-control" placeholder="输入管道长度">
             </div>
         </form>
-      </div>
-
-      <div class="container">
-        <h4>Entrance speed[m/s]:</h4>
+      </td>
+      <td>
+        <h4>入口速度:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Entrance speed[m/s]">
+              <input type="text" class="form-control" placeholder="输入入口速度">
             </div>
         </form>
-      </div>
-
-      <div class="container">
-        <h4>Fluid Density[kg/m^3]:</h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <h4>流体密度:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Fluid Density[kg/m^3]">
+              <input type="text" class="form-control" placeholder="输入流体密度">
             </div>
         </form>
-      </div>
-
-      <div class="container">
-        <h4>Fluid viscosity:</h4>
+      </td>
+      <td>
+        <h4>流体粘度:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Fluid viscosity">
+              <input type="text" class="form-control" placeholder="输入流体粘度">
             </div>
         </form>
-      </div>
-
-      <div class="container">
-        <h4>Maximum grid size</h4>
+      </td>
+      <td>
+        <h4>最大网格尺寸:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Maximum grid size">
+              <input type="text" class="form-control" placeholder="输入最大网格尺寸">
             </div>
         </form>
-      </div>
-
-      <div class="container">
-        <h4>Deadline</h4>
+      </td>
+    </tr>
+    <tr>
+        <td>
+           <h4>截止时间:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Deadline">
+              <input type="text" class="form-control" placeholder="输入截止时间">
             </div>
         </form>
-      </div>
+        </td>
 
-
-      <div class="container">
-        <h4>Output interval</h4>
+        <td>
+          <h4>输出间隙:</h4>
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Output interval">
+              <input type="text" class="form-control" placeholder="输入输出间隙">
             </div>
         </form>
-      </div>
-
-
-      <br>
+        </td>
+    </tr>
+  </tbody>
+</table>
+    </div>
       <div class="container">
-        <button type="button" class="btn btn-primary btn-lg">Calculation</button>
+        <button type="button" onclick="multiplyBy()" class="btn btn-primary btn-lg" style="float: right; text-align: center;margin-top: 5px;margin-bottom:5px;">
+            计算
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
       </div>
-  </div>
+
+      </div>
 <!--计算参数-->
   <div class="tab-pane fade in active" id="结果展示">
       <div class="container">
-          <img src="images/速度云图.png" alt="">
+          <h4>得出结果为：
+          <span id = "result"></span>
+          </h4>
+
       </div>
+      <br>
+
+      <div class="container">
+          <h4>速度云图</h4>
+          <img src="images/速度云图.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;" alt="">
+          <br>
+          <h4>速度矢量图</h4>
+          <img src="images/速度矢量图.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;" alt="">
+          <br>
+          <h4>速度等值线</h4>
+          <img src="images/速度等值线.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;" alt="">
+          <br>
+      </div>
+      <br>
+      <div class="container">
+        <button type="button" class="btn btn-primary btn-lg" style="float: right; text-align: center;margin-top: 5px;margin-bottom:5px;">
+            导出至Excel
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
+      </div>
+      <br>
+
+
+
+
+
   </div>  
 
 
@@ -575,6 +620,14 @@ function filterFunction() {
 })
 </script>
 <!--Tab Switch Js-->
+    <script>
+        function multiplyBy()
+{
+        num1 = document.getElementById("entrance-traffic").value;
+        num2 = document.getElementById("entrance-pressure").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+    </script>
 </div>
 <!--导航条 End-->
 
