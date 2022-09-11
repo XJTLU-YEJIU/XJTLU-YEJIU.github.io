@@ -1,0 +1,61 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<style>
+    .lead {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-align: center !important;
+    }
+    .cover-heading{
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: black;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+        text-align: center!important;
+        box-sizing: border-box;
+        display: block;
+        padding: 0 1.5rem;
+        user-select: auto;
+    }
+    .foot {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .content{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+{#  中间引导词内容  #}
+<div class="content">
+    <main role="main" class="inner cover">
+    <h1 class="cover-heading">请选择阀门类型</h1>
+    <p class="lead">本网站为阀门选型数据库</p>
+    <p class="lead">
+    <a href="{% url 'accounts:fa-zha-1' %}" class="btn btn-lg btn-secondary">Start</a>
+    </p>
+</main>
+</div>
+{#  中间引导词内容  #}
+
+
+{#  注脚编写  #}
+<div class="foot">
+    <hr>
+  <p>Web Design by <a href="https://www.xjtlu.edu.cn/zh/">西交利物浦大学</a>, by <a href="https://github.com/XJTLU-YEJIU">XJTLU-YEJIU</a>.</p>
+</div>
+{#  注脚编写  #}
+
+
+{% endblock %}
